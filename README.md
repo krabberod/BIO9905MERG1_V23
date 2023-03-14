@@ -98,5 +98,5 @@ You can find the PDFs [here:](Suggested_reading/)
 ![](images/2021/04/Artboard2x.png)
 ---
 
-Try again fail again fail better. 
+All the keywords in this explanation, by the way, are totally misleading, due to the everyday quirks of language. -Don DeLillo, Ratner's Star. 
 ---
