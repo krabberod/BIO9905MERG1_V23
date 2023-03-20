@@ -73,7 +73,7 @@ Participants have been assigned [to a beakoutroom](Lectures_and_groups/Breakout_
 
 ---
 # Software
-We will use R (version 4.0.5 or later) and RStudio (version 1.4.1 or later) in this course. Some parts also require access to a Unix/Linux environment. For Mac users, this is already accessible through the terminal. For Windows users, it is possible to install Windows Subsystem for Linux (https://learn.microsoft.com/en-us/windows/wsl/install). Another option, which we will use in this course, is to run Google's Colab.
+We will use R (version 4.0.5 or later) and Rstudio (version 1.4.1 or later) in this course.
 
 **Everybody should download and install R (https://www.r-project.org/), Rstudio (https://www.rstudio.com/) and the required packages before the course starts**.
 
@@ -97,6 +97,6 @@ You can find the PDFs [here:](Suggested_reading/)
 ### Supported by [Digitalt Liv Norge](https://www.digitallifenorway.org/), [ForBio](https://www.forbio.uio.no/), and [Norbis](https://norbis.w.uib.no/)
 ![](images/2021/04/Artboard2x.png)
 ---
-  
-### All the keywords in this explanation, by the way, are totally misleading, due to the everyday quirks of language. -Don DeLillo, Ratner's Star. 
+
+All the keywords in this explanation, by the way, are totally misleading, due to the everyday quirks of language. -Don DeLillo, Ratner's Star. 
 ---
