@@ -73,7 +73,7 @@ Participants have been assigned [to a beakoutroom](Lectures_and_groups/Breakout_
 
 ---
 # Software
-We will use R (version 4.0.5 or later) and Rstudio (version 1.4.1 or later) in this course.
+We will use R (version 4.0.5 or later) and RStudio (version 1.4.1 or later) in this course. Some parts also require access to a Unix/Linux environment. For Mac users, this is already accessible through the terminal. For Windows users, it is possible to install Windows Subsystem for Linux (https://learn.microsoft.com/en-us/windows/wsl/install). Another option, which we will use in this course, is to run Google's Colab.
 
 **Everybody should download and install R (https://www.r-project.org/), Rstudio (https://www.rstudio.com/) and the required packages before the course starts**.
 
