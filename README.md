@@ -1,17 +1,17 @@
 # Bioinformatics for Environmental Sequencing (DNA metabarcoding)
-**This pages contains course material for BIO9905MERG1 Spring 2023**  
-For Univeristy of Oslo [webpage, click here](https://www.uio.no/studier/emner/matnat/ibv/BIO9905MERG1/).
+**These pages contain course material for BIO9905MERG1 Spring 2023**  
+For the course page on the University of Oslo [webpage, click here](https://www.uio.no/studier/emner/matnat/ibv/BIO9905MERG1/).
 
 ## Course content
-For mapping and exploring communities of both micro- and macroorganisms, high throughput sequencing (HTS) of environmental DNA has become a powerful approach. One can either analyze the total DNA content to obtain knowledge about which genes are present (DNA metagenomics) or sequence a selected PCR amplified marker (DNA metabarcoding) to obtain information about the taxonomic composition. We will focus on the latter approach in this course. The students will be introduced to important analytical bioinformatics approaches from processing of raw sequence data to establishment of the OTU/sample matrix and retrieval of taxonomic identity of the sequences.
+For mapping and exploring communities of both micro- and macroorganisms, high throughput sequencing (HTS) of environmental DNA has become a powerful approach. One can either analyze the total DNA content to obtain knowledge about which genes are present (DNA metagenomics) or sequence a selected PCR-amplified marker (DNA metabarcoding) to obtain information about the taxonomic composition. We will focus on the latter approach in this course. The students will be introduced to important analytical bioinformatics approaches from the processing of raw sequence data to establishment of the OTU/sample matrix and retrieval of taxonomic identity of the sequences.
 
 Important themes will be (1) filtering and quality assessment of high throughput sequence data, (2) error correction and/or clustering of high throughput sequence data, and (3) taxonomic annotation of high throughput sequence data. We will also touch upon some further downstream analyses, including network analyses and evolutionary placement of HTS onto backbone phylogenies. Applications of a wide suite of tools will be presented, including VSEARCH and DADA2.
 
-The course will be a blend of presentations, guest lectures, discussion and a few hands on sessions. All hands-on secession will be run in R on your local laptop/computer. Hence, all participants should have R and selected R packages installed – see information below. (Due to the covid situation, we do not have the capacity to run analyses on servers – as we usually do).
+The course will be a blend of presentations, guest lectures, discussion and a few hands-on sessions. All hands-on secession will be run in R on your local laptop/computer. Hence, all participants should have R and selected R packages installed – see information below. 
 
 ## Schedule
 
-The course will run 3-7 May 9am-4(5)pm in zoom. For a detailed overview of the program, see below. The zoom link will be provided.
+The course will run from 17-21 April, 9:00-17:00 (times may vary). For a detailed overview of the program, see below.
 
 ## Report
 Those of you that attend the course through the research schools or UiO and want to obtain ECTS credits, will have to hand in a report before June 1th.
@@ -20,12 +20,11 @@ For the report, you should write a 5-page text (minimum) about a fictive researc
 The report should be sent to: haavarka@ibv.uio.no
 
 ## Teachers
-Main teachers will be Ramiro Logares, Anders K.  Krabberød, Micah Dunthorn, Torbjørn Rognes and Håvard Kauserud (organizer), but other experts will provide guest lectures (see table).
+The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, Torbjørn Rognes, Frederic Mahé and Håvard Kauserud (organizer), but other experts will provide guest lectures (see table).
 
 
 
 ## Program
-Participants have been assigned [to a beakoutroom](Lectures_and_groups/Breakout_groups.pdf) for group discussion.
 
 | Day           | Time (start) | Topic                                                                                                       | Responsible                          |
 | ------------- | ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------ |
@@ -73,11 +72,11 @@ Participants have been assigned [to a beakoutroom](Lectures_and_groups/Breakout_
 
 ---
 # Software
-We will use R (version 4.0.5 or later) and Rstudio (version 1.4.1 or later) in this course.
+We will use R (version 4.0.5 or later) and Rstudio (version 1.4.1 or later) in this course. In addition, we will use Google Colab for programs that require a Linux/Unix environment. 
 
 **Everybody should download and install R (https://www.r-project.org/), Rstudio (https://www.rstudio.com/) and the required packages before the course starts**.
 
-For more information about required packages [Click here](Setup/).
+For more information about the required packages [Click](Setup/) here](Setup/).
 
 ---
 
@@ -97,6 +96,6 @@ You can find the PDFs [here:](Suggested_reading/)
 ### Supported by [Digitalt Liv Norge](https://www.digitallifenorway.org/), [ForBio](https://www.forbio.uio.no/), and [Norbis](https://norbis.w.uib.no/)
 ![](images/2021/04/Artboard2x.png)
 ---
-
+.
 All the keywords in this explanation, by the way, are totally misleading, due to the everyday quirks of language. -Don DeLillo, Ratner's Star. 
 ---
