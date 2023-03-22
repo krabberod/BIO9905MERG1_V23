@@ -7,7 +7,7 @@ For mapping and exploring communities of both micro- and macroorganisms, high th
 
 Important themes will be (1) filtering and quality assessment of high throughput sequence data, (2) error correction and/or clustering of high throughput sequence data, and (3) taxonomic annotation of high throughput sequence data. We will also touch upon some further downstream analyses, including network analyses and evolutionary placement of HTS onto backbone phylogenies. Applications of a wide suite of tools will be presented, including VSEARCH and DADA2.
 
-The course will be a blend of presentations, guest lectures, discussion and a few hands-on sessions. All hands-on secession will be run in R on your local laptop/computer. Hence, all participants should have R and selected R packages installed – see information below. 
+The course will be a blend of presentations, guest lectures, discussion and a few hands-on sessions. All hands-on secession will be run in R on your local laptop/computer. Hence, all participants should have R and selected R packages installed – see information below.
 
 ## Schedule
 
@@ -28,7 +28,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 
 | Day           | Time (start) | Topic                                                                                                       | Responsible                          |
 | ------------- | ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| **Monday**    | 09:00        | [Introduction to DNA metabarcoding](Lectures_and_groups/Intro_lecture_Kauserud.pdf)                         | Håvard Kauserud                      |
+| **Monday**    | 09:00        | [Introduction to DNA metabarcoding](Lectures_and_groups/Intro_lecture_Kauserud.pdf)                         |                                      |
 |               | 10:00        | [Introduction to sequencing techniques](Lectures_and_groups/20210503_Lyle.pdf)                              | Robert Lyle                          |
 |               | 11:00        | [Discussion groups: Get to know each other](Lectures_and_groups/Group_work_Monday.pdf)                      | Håvard Kauserud                      |
 |               | 12:00        | _Lunch break_                                                                                               |                                      |
@@ -72,7 +72,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 
 ---
 # Software
-We will use R (version 4.0.5 or later) and Rstudio (version 1.4.1 or later) in this course. In addition, we will use Google Colab for programs that require a Linux/Unix environment. 
+We will use R (version 4.0.5 or later) and Rstudio (version 1.4.1 or later) in this course. In addition, we will use Google Colab for programs that require a Linux/Unix environment.
 
 **Everybody should download and install R (https://www.r-project.org/), Rstudio (https://www.rstudio.com/) and the required packages before the course starts**.
 
