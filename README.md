@@ -95,7 +95,6 @@ You can find the PDFs [here:](Suggested_reading/)
  ----
 ### Supported by [Digitalt Liv Norge](https://www.digitallifenorway.org/), [ForBio](https://www.forbio.uio.no/), and [Norbis](https://norbis.w.uib.no/)
 ![](images/2021/04/Artboard2x.png)
----
-.  
-All the keywords in this explanation, by the way, are totally misleading, due to the everyday quirks of language. -Don DeLillo, Ratner's Star. 
+All the keywords in this explanation, by the way, are totally misleading, due to the everyday quirks of language. **Don DeLillo, Ratner's Star**.
+
 ---
