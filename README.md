@@ -26,48 +26,50 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 
 ## Program
 
-| Day           | Time (start) | Topic                                                                                                       | Responsible                          |
-| ------------- | ------------ | ----------------------------------------------------------------------------------------------------------- | ------------------------------------ |
-| **Monday**    | 09:00        | [Introduction to DNA metabarcoding](Lectures_and_groups/Intro_lecture_Kauserud.pdf)                         |                                      |
-|               | 10:00        | [Introduction to sequencing techniques](Lectures_and_groups/20210503_Lyle.pdf)                              | Robert Lyle                          |
-|               | 11:00        | [Discussion groups: Get to know each other](Lectures_and_groups/Group_work_Monday.pdf)                      | Håvard Kauserud                      |
-|               | 12:00        | _Lunch break_                                                                                               |                                      |
-|               | 13:00        | Introduction to [Linux](intro.to.unix) and [R](intro.to.r)/[Rstudio](intro.to.Rstudio)                      | Ramiro Logares/Anders K. Krabberød   |
-|               | 14:00        | [Sequence cleaning](sequence.preprocessing)                                                                 | Ramiro Logares                       |
-|               | 15:00        | [Introduction to VSEARCH (and SWARM)](Lectures_and_groups/Rognes_vsearch-swarm.pdf)                         | Torbjørn Rognes                      |
-|               | 16:00        | [Help with setup and installation of required packages](Setup)                                              | Anders K. Krabberød                  |
-|               |              |                                                                                                             |                                      |
-| **Tuesday**   | 09:00        | [Introduction to DADA2](Dada2_Pipeline)                                                                     | Anders K. Krabberød                  |
-|               | 10:00        | [Continuation DADA2](Dada2_Pipeline)                                                                        | Anders K. Krabberød                  |
-|               | 11:00        | [Continuation DADA2](Dada2_Pipeline)                                                                        | Anders K. Krabberød                  |
-|               | 12:00        | _Lunch break_                                                                                               |                                      |
-|               | 13:00        | [Contamination issues during DNA metabarcoding](Lectures_and_groups/bohmann_3May_2021.pdf)                  | Kristine Bohmann                     |
-|               | 14:00        | [Continuation DADA2](Dada2_Pipeline)                                                                        | Ramiro Logares / Anders K. Krabberød |
-|               | 15:00        | [Diet analyses](Lectures_and_groups/Presentation_diet20210405.pdf)                                          | Galina Gusarova                      |
-|               |              |                                                                                                             |                                      |
-| **Wednesday** | 09:00        | [Taxonomic assignment](Lectures_and_groups/Davey_taxo_assign_04052021.pdf)                                  | Marie Davey                          |
-|               | 10:00        | Flexible (dada2...)                                                                                         | Anders K. Krabberød                  |
-|               | 11:00        | [Multivariate analyses of DNA-metabarcoding data](community.ecology)                                        | Ramiro Logares                       |
-|               | 12:00        | _Lunch break_                                                                                               |                                      |
-|               | 13:00        | [In-silico PCR and how to get quantitative information](Lectures_and_groups)                                | Douglas Yu                           |
-|               | 14:00        | [Multivariate analyses of DNA-metabarcoding data](community.ecology)                                        | Ramiro Logares                       |
-|               | 15:00        | [Group discussions](Lectures_and_groups/Group_work_Wednesday.pdf)                                           |                                      |
-|               |              |                                                                                                             |                                      |
-| **Thursday**  | 09:00        | [Phylogenetic placement of HTS data](Phylogenetic_placement)                                                | Micah Dunthorn                       |
-|               | 10:00        | [Phylogenetic placement of HTS data](Phylogenetic_placement)                                                | Micah Dunthorn                       |
-|               | 11:00        | [OTUs, ASVs and phylospecies](Lectures_and_groups/dunthorn_clustering_talk.pdf)                             | Micah Dunthorn                       |
-|               | 12:00        | _Lunch break_                                                                                               |                                      |
-|               | 13:00        | [Long-read metabarcoding](Lectures_and_groups/Long-read_metabarcoding.pdf)                                  | Mahwash Jamy                         |
-|               | 14:00        | [Introduction to metacoder](Metacoder)                                                                      | Ella Thoen                           |
-|               | 15:00        | [Case study ](Lectures_and_groups/Maurice_2021.pdf)                                                         | Sundy Maurice                        |
-|               |              |                                                                                                             |                                      |
-| **Friday**    | 09:00        | [Network analyses of DNA-metabarcoding data](Networks)                                                      | Anders K. Krabberød                  |
-|               | 10:00        | [Network analyses of DNA-metabarcoding data](Networks)                                                      | Anders K. Krabberød                  |
-|               | 11:00        | Flexible time                                                                                               |                                      |
-|               | 12:00        | _Lunch break_                                                                                               |                                      |
-|               | 13:00        | [Methods to retrieve intra-species diversity information](Lectures_and_groups/Wangensteen_Intraspecies.pdf) | Owen S. Wangensteen Fuentes          |
-|               | 14:00        | [Discussion groups](Lectures_and_groups/Group_work_Friday.pdf)                                              | Håvard Kauserud                      |
-|               | 15:00        | DNA-metabarcoding - where are we going?                                                                     | Pierre Taberlet                      |
+| Day           | Time (start) | Topic                                                                                                       | Responsible                   |
+| ------------- | ------------ | ----------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| **Monday**    | 09:00        | [Introduction to DNA metabarcoding](Lectures_and_groups/Intro_lecture_Kauserud.pdf)                         | Håvard Kauserud               |
+|               | 10:00        | *Introduction continued*                                                                                    |                               |
+|               | 11:00        | [Introduction to sequencing techniques](Lectures_and_groups/20210503_Lyle.pdf)                              | Håvard Kauserud               |
+|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 13:00        | Introduction to [Linux](intro.to.unix) and [R](intro.to.r)/[Rstudio](intro.to.Rstudio)                      | Ramiro Logares                |
+|               | 14:00        | Get to know each other (group work)                                                                         | Håvard Kauserud               |
+|               | 15:00        | Cutadapt and sequence cleaning                                                                              | Torbjørn Rognes               |
+|               | 16:00        | [Help with setup and installation of required packages](Setup)                                              | Anders K. Krabberød           |
+|               | 17:00        | *PIZZA*                                                                                                     |                               |
+|               |              |                                                                                                             |                               |
+| **Tuesday**   | 09:00        | [Introduction to DADA2](Dada2_Pipeline)                                                                     | A. Krabberød / R. Logares     |
+|               | 10:00        | *DADA2 continued*                                                                                           |                               |
+|               | 11:00        | *DADA2 continued*                                                                                           |                               |
+|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 13:00        | *DADA2 continued*                                                                                           |                               |
+|               | 14:00        | *DADA2 continued*                                                                                           |                               |
+|               | 15:00        | About DADA2 and its further applications                                                                    | Ben Callahan (Zoom)           |
+|               | 16:00        | *About DADA2 continued*                                                                                     |                               |
+|               |              |                                                                                                             |                               |
+| **Wednesday** | 09:00        | Introduction to VSEARCH and Swarm                                                                           | Torbjørn Rognes               |
+|               | 10:00        | from FASTQ files to OTU tables                                                                              | Frédéric Mahé                 |
+|               | 11:00        | *continued*                                                                                                 |                               |
+|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 13:00        | LULU and MUMU (C++ version of LULU)                                                                         | Frédéric Mahé                 |
+|               | 14:00        | [Multivariate analyses of DNA-metabarcoding data](community.ecology)                                        | Douglas Yu (Zoom)             |
+|               | 15:00        | [Group discussions](Lectures_and_groups/Group_work_Wednesday.pdf)                                           |                               |
+|               |              |                                                                                                             |                               |
+| **Thursday**  | 09:00        | Introduction to long-read DNA metabarcoding                                                                 | Mahawash Jamy                 |
+|               | 10:00        | Phylogenetic placement/binning of HTS data                                                                  | Micah Dunthorn/Lucas Czech    |
+|               | 11:00        | *continued*                                                                                                 |                               |
+|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 13:00        | OTUs, ASVs and phylospecies                                                                                 | Micah Dunthorn                |
+|               | 14:00        | Contamination, library prep, aerial metabarcoding                                                           | Kristine Bohmann              |
+|               | 15:00        | *continued*                                                                                                 |                               |
+|               |              |                                                                                                             |                               |
+| **Friday**    | 09:00        | Metacoder                                                                                                   | Ella Thoen                    |
+|               | 10:00        | *continued*                                                                                                 |                               |
+|               | 11:00        | Downstream analyses                                                                                         |                               |
+|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 13:00        | [Methods to retrieve intra-species diversity information](Lectures_and_groups/Wangensteen_Intraspecies.pdf) | Owen S. Wangensteen Fuentes   |
+|               | 14:00        | Case studie on DNA metabarcoding                                                                            | Sundy Maurice (guest lecture) |
+|               | 15:00        | Group work, Q&A                                                                                             |                               |
 
 
 ---
