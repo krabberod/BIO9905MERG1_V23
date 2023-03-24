@@ -55,8 +55,8 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 11:00        | *continued*                                                                            |                               |
 |               | 12:00        | **Lunch break**                                                                        |                               |
 |               | 13:00        | LULU and MUMU (C++ version of LULU)                                                    | Frédéric Mahé                 |
-|               | 14:00        | [Multivariate analyses of DNA-metabarcoding data](community.ecology)                   | Douglas Yu (Zoom)             |
-|               | 15:00        | [Group discussions](Lectures_and_groups/Group_work_Wednesday.pdf)                      |                               |
+|               | 14:00        | Abundance estimation in DNA metabarcoding                                              | Douglas Yu (Zoom)             |
+|               | 15:00        | Taxonomic assignment                                                                   |                               |
 |               |              |                                                                                        |                               |
 | **Thursday**  | 09:00        | Introduction to long-read DNA metabarcoding                                            | Mahawash Jamy                 |
 |               | 10:00        | Phylogenetic placement/binning of HTS data                                             | Micah Dunthorn/Lucas Czech    |
@@ -70,7 +70,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 10:00        | *continued*                                                                            |                               |
 |               | 11:00        | Downstream analyses                                                                    |                               |
 |               | 12:00        | **Lunch break**                                                                        |                               |
-|               | 13:00        | Downstream analyses                                                                    |                               | 
+|               | 13:00        | Downstream analyses                                                                    |                               |
 |               | 14:00        | Case studie on DNA metabarcoding                                                       | Sundy Maurice (guest lecture) |
 |               | 15:00        | Group work, Q&A                                                                        |                               |
 
