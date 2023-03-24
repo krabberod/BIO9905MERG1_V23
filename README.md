@@ -20,7 +20,7 @@ For the report, you should write a 5-page text (minimum) about a fictive researc
 The report should be sent to: haavarka@ibv.uio.no
 
 ## Teachers
-The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, Torbjørn Rognes, Frederic Mahé and Håvard Kauserud (organizer), but other experts will provide guest lectures (see table).
+The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, Torbjørn Rognes, Frédéric Mahé and Håvard Kauserud (organizer), but other experts will provide guest lectures (see table).
 
 
 
@@ -31,17 +31,17 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 | **Monday**    | 09:00        | [Introduction to DNA metabarcoding](Lectures_and_groups/Intro_lecture_Kauserud.pdf)                         | Håvard Kauserud               |
 |               | 10:00        | *Introduction continued*                                                                                    |                               |
 |               | 11:00        | [Introduction to sequencing techniques](Lectures_and_groups/20210503_Lyle.pdf)                              | Håvard Kauserud               |
-|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 12:00        | **Lunch break**                                                                                             |                               |
 |               | 13:00        | Introduction to [Linux](intro.to.unix) and [R](intro.to.r)/[Rstudio](intro.to.Rstudio)                      | Ramiro Logares                |
 |               | 14:00        | Get to know each other (group work)                                                                         | Håvard Kauserud               |
 |               | 15:00        | Cutadapt and sequence cleaning                                                                              | Torbjørn Rognes               |
 |               | 16:00        | [Help with setup and installation of required packages](Setup)                                              | Anders K. Krabberød           |
-|               | 17:00        | *PIZZA*                                                                                                     |                               |
+|               | 17:00        | **PIZZA**                                                                                                   |                               |
 |               |              |                                                                                                             |                               |
 | **Tuesday**   | 09:00        | [Introduction to DADA2](Dada2_Pipeline)                                                                     | A. Krabberød / R. Logares     |
 |               | 10:00        | *DADA2 continued*                                                                                           |                               |
 |               | 11:00        | *DADA2 continued*                                                                                           |                               |
-|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 12:00        | **Lunch break**                                                                                             |                               |
 |               | 13:00        | *DADA2 continued*                                                                                           |                               |
 |               | 14:00        | *DADA2 continued*                                                                                           |                               |
 |               | 15:00        | About DADA2 and its further applications                                                                    | Ben Callahan (Zoom)           |
@@ -50,7 +50,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 | **Wednesday** | 09:00        | Introduction to VSEARCH and Swarm                                                                           | Torbjørn Rognes               |
 |               | 10:00        | from FASTQ files to OTU tables                                                                              | Frédéric Mahé                 |
 |               | 11:00        | *continued*                                                                                                 |                               |
-|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 12:00        | **Lunch break**                                                                                             |                               |
 |               | 13:00        | LULU and MUMU (C++ version of LULU)                                                                         | Frédéric Mahé                 |
 |               | 14:00        | [Multivariate analyses of DNA-metabarcoding data](community.ecology)                                        | Douglas Yu (Zoom)             |
 |               | 15:00        | [Group discussions](Lectures_and_groups/Group_work_Wednesday.pdf)                                           |                               |
@@ -58,7 +58,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 | **Thursday**  | 09:00        | Introduction to long-read DNA metabarcoding                                                                 | Mahawash Jamy                 |
 |               | 10:00        | Phylogenetic placement/binning of HTS data                                                                  | Micah Dunthorn/Lucas Czech    |
 |               | 11:00        | *continued*                                                                                                 |                               |
-|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 12:00        | **Lunch break**                                                                                             |                               |
 |               | 13:00        | OTUs, ASVs and phylospecies                                                                                 | Micah Dunthorn                |
 |               | 14:00        | Contamination, library prep, aerial metabarcoding                                                           | Kristine Bohmann              |
 |               | 15:00        | *continued*                                                                                                 |                               |
@@ -66,7 +66,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 | **Friday**    | 09:00        | Metacoder                                                                                                   | Ella Thoen                    |
 |               | 10:00        | *continued*                                                                                                 |                               |
 |               | 11:00        | Downstream analyses                                                                                         |                               |
-|               | 12:00        | _Lunch break_                                                                                               |                               |
+|               | 12:00        | **Lunch break**                                                                                             |                               |
 |               | 13:00        | [Methods to retrieve intra-species diversity information](Lectures_and_groups/Wangensteen_Intraspecies.pdf) | Owen S. Wangensteen Fuentes   |
 |               | 14:00        | Case studie on DNA metabarcoding                                                                            | Sundy Maurice (guest lecture) |
 |               | 15:00        | Group work, Q&A                                                                                             |                               |
