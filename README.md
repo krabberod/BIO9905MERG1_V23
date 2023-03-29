@@ -37,7 +37,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 12:00        | **Lunch break**                                                                        |                               |
 |               | 13:00        | Introduction to [Linux](intro.to.unix) and [R](intro.to.r)/[Rstudio](intro.to.Rstudio) | Ramiro Logares                |
 |               | 14:00        | Get to know each other (group work)                                                    | Håvard Kauserud               |
-|               | 15:00        | Cutadapt and sequence cleaning                                                         | Torbjørn Rognes               |
+|               | 15:00        | Cutadapt and sequence cleaning                                                         | Ramiro Logares             |
 |               | 16:00        | [Help with setup and installation of required packages](Setup)                         | Anders K. Krabberød           |
 |               | 17:00        | **PIZZA**                                                                              |                               |
 |               |              |                                                                                        |                               |
