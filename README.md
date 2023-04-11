@@ -87,7 +87,7 @@ For more information about the required packages [click here](Setup/).
 
 
 # Suggested reading (reviews)
-You can find the PDFs [here:](Suggested_reading/)
+You can find the PDFs as well as some more reading material under  [Suggested reading:](Suggested_reading/)
 - Zinger et al. 2019. DNA metabarcoding—Need for robust experimental designs to draw sound ecological conclusions. Molecular Ecology, 28, 1857-1862
 - Deiner et al. 2017. Environmental DNA metabarcoding: Transforming how we survey animal and plant communities. Molecular Ecology, 26, 5872-5895.
 - Bohmann et al. 2014. Environmental DNA for wildlife biology and biodiversity monitoring. TREE, 29.

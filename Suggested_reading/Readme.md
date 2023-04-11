@@ -10,6 +10,8 @@ Here we have gathered some literature on metabarcoding.
 - [Antich et al. 2021](Antich_et_al_2021.pdf). To denoise or to cluster, that is not the question: optimizing pipelines for COI metabarcoding and metaphylogeography. BMC Bioinformatics, 22,177.
 - [Lamb et al. 2019](Lamb_et_al_2018.pdf). How quantitative is metabarcoding: A meta‐analytical approach. Molecular Ecology, 28, 420-430.
 - [Jamy et al. 2019](Jamy_et_al_2019.pdf). Long-read metabarcoding of the eukaryotic rDNA operon to phylogenetically and taxonomically resolve environmental diversity. Molecular Ecology Resources, 20, 429-443.
+-[Schnell et al. 2015](Schnell_et_al_2015). Tag jumps illuminated – reducing sequence‐to‐sample misidentifications in metabarcoding studies. Molecular Ecology Resources, 15, 1289-1303.Antich et al. 2021. To denoise or to cluster, that is not the question: optimizing pipelines for COI metabarcoding and metaphylogeography. BMC Bioinformatics, 22,177.
+
 
 ### Methods
 - [Foster et al. 2017](Foster_et_al_2017.pdf). Metacoder: An R package for visualization and manipulation of community taxonomic diversity data. PLoS Computational biology, 13.
