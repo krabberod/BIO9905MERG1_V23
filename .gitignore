@@ -3,6 +3,7 @@ Dada2_Pipeline/fastq_filtered/qual_pdf/
 Dada2_Pipeline/*pptx
 *.fastq
 
+*.Rproj
 .Rproj.user
 .Rhistory
 .RData
