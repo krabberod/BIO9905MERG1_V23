@@ -32,12 +32,12 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 | Day           | Time (start) | Topic                                                                                  | Responsible                   |
 | ------------- | ------------ | -------------------------------------------------------------------------------------- | ----------------------------- |
 | **Monday**    | 09:00        | [Introduction to DNA metabarcoding](Lectures_and_groups/Intro_lecture_Kauserud.pdf)    | Håvard Kauserud               |
-|               | 10:00        | *Introduction continued*                                                               |                               |
-|               | 11:00        | [Introduction to sequencing techniques](Lectures_and_groups/20210503_Lyle.pdf)         | Håvard Kauserud               |
+|               | 10:00        | *Introduction continued*                                                               |                          |
+|               | 11:00        | [Introduction to sequencing techniques](Lectures_and_groups/20210503_Lyle.pdf)         |   TBA                              |
 |               | 12:00        | **Lunch break**                                                                        |                               |
-|               | 13:00        | Introduction to [Linux](intro.to.unix) and [R](intro.to.r)/[Rstudio](intro.to.Rstudio) | Ramiro Logares                |
-|               | 14:00        | Get to know each other (group work)                                                    | Håvard Kauserud               |
-|               | 15:00        | Cutadapt and sequence cleaning                                                         | Ramiro Logares             |
+|               | 13:00        |                                                                                        | Håvard Kauserud               |
+|               | 14:00        | Introduction to [Linux](intro.to.unix) and [R](intro.to.r)/[Rstudio](intro.to.Rstudio) | Ramiro Logares                |
+|               | 15:00        | Cutadapt and sequence cleaning                                                         |                               |
 |               | 16:00        | [Help with setup and installation of required packages](Setup)                         | Anders K. Krabberød           |
 |               | 17:00        | **PIZZA**                                                                              |                               |
 |               |              |                                                                                        |                               |
@@ -58,21 +58,21 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 14:00        | Abundance estimation in DNA metabarcoding                                              | Douglas Yu (Zoom)             |
 |               | 15:00        | Taxonomic assignment                                                                   |                               |
 |               |              |                                                                                        |                               |
-| **Thursday**  | 09:00        | Introduction to long-read DNA metabarcoding                                            | Mahawash Jamy                 |
-|               | 10:00        | Phylogenetic placement/binning of HTS data                                             | Micah Dunthorn/Lucas Czech    |
+| **Thursday**  | 09:00        | Phylogenetic placement/binning of HTS data                                             | Lucas Czech                   |
+|               | 10:00        | Introduction to long-read DNA metabarcoding                                            | Mahawash Jamy                 |
 |               | 11:00        | *continued*                                                                            |                               |
 |               | 12:00        | **Lunch break**                                                                        |                               |
 |               | 13:00        | OTUs, ASVs and phylospecies                                                            | Micah Dunthorn                |
-|               | 14:00        | Contamination, library prep, aerial metabarcoding                                      | Kristine Bohmann              |
+|               | 14:00        | Contamination, library prep, aerial metabarcoding                                      | Kristine Bohmann (Zoom)       |
 |               | 15:00        | *continued*                                                                            |                               |
 |               |              |                                                                                        |                               |
-| **Friday**    | 09:00        | Metacoder                                                                              | Ella Thoen                    |
-|               | 10:00        | *continued*                                                                            |                               |
-|               | 11:00        | Downstream analyses                                                                    |                               |
+| **Friday**    | 09:00        | Taxonomic annotation                                                                   | Marie Davey                   |
+|               | 10:00        | Case study (insect metabarcoding)                                                      | Marie Davey                   |
+|               | 11:00        | Metacoder                                                                              | Ella Thoen                    |
 |               | 12:00        | **Lunch break**                                                                        |                               |
-|               | 13:00        | Downstream analyses                                                                    |                               |
+|               | 13:00        | Downstream analyses                                                                    | Ramiro  and Anders            |
 |               | 14:00        | Case studie on DNA metabarcoding                                                       | Sundy Maurice (guest lecture) |
-|               | 15:00        | Group work, Q&A                                                                        |                               |
+|               | 15:00        | Summing up, Q&A                                                                        |                               |
 
 
 ---
