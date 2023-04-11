@@ -56,11 +56,12 @@ BiocManager::install(c("dada2", "phyloseq","Biostrings","PCAtools"))
 # install.packages("RcmdrMisc")      # diverse tools
 
 # BiocManager::install("microbiome")
-# BiocManager::install("SpiecEasi") #Network construction
+
 
 # Network packages
 # library(devtools)
 # install_github("zdk123/SpiecEasi")
+# BiocManager::install("SpiecEasi") # Network construction
 # devtools::install_github("pr2database/pr2database") # Installs directly from github resources that are not in R repos
 # devtools::install_github("GuillemSalazar/EcolUtils") # Installs other tools for ecological analyses
 # devtools::install_github('fawda123/ggord')
