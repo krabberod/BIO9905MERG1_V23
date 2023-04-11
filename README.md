@@ -81,7 +81,7 @@ We will use R (version 4.0.5 or later) and Rstudio (version 1.4.1 or later) in t
 
 **Everybody should download and install R (https://www.r-project.org/), Rstudio (https://www.rstudio.com/) and the required packages before the course starts**.
 
-For more information about the required packages [Click](Setup/) here](Setup/).
+For more information about the required packages [click here](Setup/).
 
 ---
 
@@ -99,7 +99,7 @@ You can find the PDFs [here:](Suggested_reading/)
  -Jamy et al. 2019. Long-read metabarcoding of the eukaryotic rDNA operon to phylogenetically and taxonomically resolve environmental diversity. Molecular Ecology Resources, 20, 429-443.
  ----
 ### Supported by [Digitalt Liv Norge](https://www.digitallifenorway.org/), [ForBio](https://www.forbio.uio.no/), and [Norbis](https://norbis.w.uib.no/)
-![](images/2021/04/Artboard2x.png)  
+![](images/2023/04/Artboard2x.png)  
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fkrabberod%2FBIO9905MERG1_V23&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)  
 All the keywords in this explanation, by the way, are totally misleading, due to the everyday quirks of language. **Don DeLillo, Ratner's Star**.
 
