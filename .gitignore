@@ -1,6 +1,6 @@
-dada2_main/fastq_filtered/*
-dada2_main/fastq_filtered/qual_pdf/*
-dada2_main/*pptx
+Dada2_Pipeline/fastq_filtered/
+Dada2_Pipeline/fastq_filtered/qual_pdf/
+Dada2_Pipeline/*pptx
 *.fastq
 
 .Rproj.user
