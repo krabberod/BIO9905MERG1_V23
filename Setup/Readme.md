@@ -15,5 +15,8 @@ install.packages("magrittr")
 
 if (!requireNamespace("BiocManager", quietly = TRUE))  install.packages("BiocManager")
 BiocManager::install(c("dada2", "phyloseq","Biostrings","PCAtools"))
+
+install.packages("devtools")               # Developer tools
+devtools::install_github("tobiasgf/lulu")
 ```
 More packages, including those that have been mentioned, but not necessarily used in the hands-on sessions can be found in the script [R packages](Install_packages.R).

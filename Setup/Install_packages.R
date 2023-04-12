@@ -32,6 +32,9 @@ install.packages("magrittr")
 if (!requireNamespace("BiocManager", quietly = TRUE))  install.packages("BiocManager")
 BiocManager::install(c("dada2", "phyloseq","Biostrings","PCAtools"))
 
+install.packages("devtools")               # Developer tools
+devtools::install_github("tobiasgf/lulu")
+
 # If you run into problems when running the above line try to install one package
 # at the time. i.e.: 
 # if (!requireNamespace("BiocManager", quietly = TRUE))  install.packages("BiocManager")
@@ -47,7 +50,6 @@ BiocManager::install(c("dada2", "phyloseq","Biostrings","PCAtools"))
 # install.packages("spaa")           # Installs the ecological package spaa
 # install.packages("compositions")   # To work with compositional data
 # install.packages("zCompositions")  # To work with compositional data
-# install.packages("devtools")       # Developer tools
 # install.packages("mixOmics")       # Multivariate methods
 # install.packages("ape")            # Phylogenetic tools
 # install.packages("recluster")      # Clustering tools
