@@ -29,50 +29,50 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 
 ## Program
 
-| Day           | Time (start) | Topic                                                                                             | Responsible                   |
-| ------------- | ------------ | ------------------------------------------------------------------------------------------------- | ----------------------------- |
-| **Monday**    | 09:00        | Introduction to DNA metabarcoding              | Håvard Kauserud               |
-|               | 10:00        | *Introduction continued*                                                                          |                               |
-|               | 11:00        | Introduction to sequencing techniques                    | TBA                           |
-|               | 12:00        | **Lunch break**                                                                                   |                               |
-|               | 13:00        |                                                                                                   | Håvard Kauserud               |
-|               | 14:00        | Introduction to Linux, Google Colab and R                                                         | Ramiro Logares                |
-|               | 15:00        | Cutadapt and sequence cleaning                                                                    |                               |
-|               | 16:00        | [Help with setup and installation of required packages](Setup)                                    | Anders K. Krabberød           |
-|               | 17:00        | **PIZZA**                                                                                         |                               |
-|               |              |                                                                                                   |                               |
-| **Tuesday**   | 09:00        | [Introduction to DADA2](Dada2_Pipeline)                                                           | A. Krabberød / R. Logares     |
-|               | 10:00        | *DADA2 continued*                                                                                 |                               |
-|               | 11:00        | *DADA2 continued*                                                                                 |                               |
-|               | 12:00        | **Lunch break**                                                                                   |                               |
-|               | 13:00        | *DADA2 continued*                                                                                 |                               |
-|               | 14:00        | *DADA2 continued*                                                                                 |                               |
-|               | 15:00        | About DADA2 and its further applications                                                          | Ben Callahan (Zoom)           |
-|               | 16:00        | *About DADA2 continued*                                                                           |                               |
-|               |              |                                                                                                   |                               |
-| **Wednesday** | 09:00        | Introduction to VSEARCH and Swarm                                                                 | Torbjørn Rognes               |
-|               | 10:00        | from FASTQ files to OTU tables                                                                    | Frédéric Mahé                 |
-|               | 11:00        | *continued*                                                                                       |                               |
-|               | 12:00        | **Lunch break**                                                                                   |                               |
-|               | 13:00        | [LULU](https://github.com/frederic-mahe/BIO9905MERG1_lulu_seminar) and MUMU (C++ version of LULU) | Frédéric Mahé                 |
-|               | 14:00        | Abundance estimation in DNA metabarcoding                                                         | Douglas Yu (Zoom)             |
-|               | 15:00        | Taxonomic assignment                                                                              |                               |
-|               |              |                                                                                                   |                               |
-| **Thursday**  | 09:00        | Phylogenetic placement/binning of HTS data                                                        | Lucas Czech                   |
-|               | 10:00        | Introduction to long-read DNA metabarcoding                                                       | Mahawash Jamy                 |
-|               | 11:00        | *continued*                                                                                       |                               |
-|               | 12:00        | **Lunch break**                                                                                   |                               |
-|               | 13:00        | OTUs, ASVs and phylospecies                                                                       | Micah Dunthorn                |
-|               | 14:00        | Contamination, library prep, aerial metabarcoding                                                 | Kristine Bohmann (Zoom)       |
-|               | 15:00        | *continued*                                                                                       |                               |
-|               |              |                                                                                                   |                               |
-| **Friday**    | 09:00        | Taxonomic annotation                                                                              | Marie Davey                   |
-|               | 10:00        | Case study (insect metabarcoding)                                                                 | Marie Davey                   |
-|               | 11:00        | Metacoder                                                                                         | Ella Thoen                    |
-|               | 12:00        | **Lunch break**                                                                                   |                               |
-|               | 13:00        | Downstream analyses                                                                               | Ramiro  and Anders            |
-|               | 14:00        | Case studie on DNA metabarcoding                                                                  | Sundy Maurice (guest lecture) |
-|               | 15:00        | Summing up, Q&A                                                                                   |                               |
+| Day           | Time (start) | Topic                                                          | Responsible                   |
+| ------------- | ------------ | -------------------------------------------------------------- | ----------------------------- |
+| **Monday**    | 09:00        | Introduction to DNA metabarcoding                              | Håvard Kauserud               |
+|               | 10:00        | *Introduction continued*                                       |                               |
+|               | 11:00        | Introduction to sequencing techniques                          | TBA                           |
+|               | 12:00        | **Lunch break**                                                |                               |
+|               | 13:00        |                                                                | Håvard Kauserud               |
+|               | 14:00        | Introduction to Linux, Google Colab and R                      | Ramiro Logares                |
+|               | 15:00        | Cutadapt and sequence cleaning                                 |                               |
+|               | 16:00        | [Help with setup and installation of required packages](Setup) | Anders K. Krabberød           |
+|               | 17:00        | **PIZZA**                                                      |                               |
+|               |              |                                                                |                               |
+| **Tuesday**   | 09:00        | [Introduction to DADA2](Dada2_Pipeline)                        | A. Krabberød / R. Logares     |
+|               | 10:00        | *DADA2 continued*                                              |                               |
+|               | 11:00        | *DADA2 continued*                                              |                               |
+|               | 12:00        | **Lunch break**                                                |                               |
+|               | 13:00        | *DADA2 continued*                                              |                               |
+|               | 14:00        | *DADA2 continued*                                              |                               |
+|               | 15:00        | About DADA2 and its further applications                       | Ben Callahan (Zoom)           |
+|               | 16:00        | *About DADA2 continued*                                        |                               |
+|               |              |                                                                |                               |
+| **Wednesday** | 09:00        | Introduction to VSEARCH and Swarm                              | Torbjørn Rognes               |
+|               | 10:00        | from FASTQ files to OTU tables                                 | Frédéric Mahé                 |
+|               | 11:00        | *continued*                                                    |                               |
+|               | 12:00        | **Lunch break**                                                |                               |
+|               | 13:00        | [LULU](Vsearch_swarm/) and MUMU (C++ version of LULU)                     | Frédéric Mahé                 |
+|               | 14:00        | Abundance estimation in DNA metabarcoding                      | Douglas Yu (Zoom)             |
+|               | 15:00        | Taxonomic assignment                                           |                               |
+|               |              |                                                                |                               |
+| **Thursday**  | 09:00        | Phylogenetic placement/binning of HTS data                     | Lucas Czech                   |
+|               | 10:00        | Introduction to long-read DNA metabarcoding                    | Mahawash Jamy                 |
+|               | 11:00        | *continued*                                                    |                               |
+|               | 12:00        | **Lunch break**                                                |                               |
+|               | 13:00        | OTUs, ASVs and phylospecies                                    | Micah Dunthorn                |
+|               | 14:00        | Contamination, library prep, aerial metabarcoding              | Kristine Bohmann (Zoom)       |
+|               | 15:00        | *continued*                                                    |                               |
+|               |              |                                                                |                               |
+| **Friday**    | 09:00        | Taxonomic annotation                                           | Marie Davey                   |
+|               | 10:00        | Case study (insect metabarcoding)                              | Marie Davey                   |
+|               | 11:00        | Metacoder                                                      | Ella Thoen                    |
+|               | 12:00        | **Lunch break**                                                |                               |
+|               | 13:00        | Downstream analyses                                            | Ramiro  and Anders            |
+|               | 14:00        | Case studie on DNA metabarcoding                               | Sundy Maurice (guest lecture) |
+|               | 15:00        | Summing up, Q&A                                                |                               |
 
 
 ---
