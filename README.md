@@ -50,11 +50,11 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 15:00        | About DADA2 and its further applications                       | Ben Callahan (Zoom)           |
 |               | 16:00        | *About DADA2 continued*                                        |                               |
 |               |              |                                                                |                               |
-| **Wednesday** | 09:00        | Introduction to VSEARCH and Swarm                              | Torbjørn Rognes               |
-|               | 10:00        | from FASTQ files to OTU tables                                 | Frédéric Mahé                 |
+| **Wednesday** | 09:00        | [Introduction to VSEARCH and Swarm](Vsearch_swarm)             | Torbjørn Rognes               |
+|               | 10:00        | [from FASTQ files to OTU tables ](Vsearch_swarm)               | Frédéric Mahé                 |
 |               | 11:00        | *continued*                                                    |                               |
 |               | 12:00        | **Lunch break**                                                |                               |
-|               | 13:00        | [LULU](Vsearch_swarm/) and MUMU (C++ version of LULU)                     | Frédéric Mahé                 |
+|               | 13:00        | [LULU and MUMU (C++ version of LULU)](Vsearch_swarm/)          | Frédéric Mahé                 |
 |               | 14:00        | Abundance estimation in DNA metabarcoding                      | Douglas Yu (Zoom)             |
 |               | 15:00        | Taxonomic assignment                                           |                               |
 |               |              |                                                                |                               |
