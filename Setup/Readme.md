@@ -19,4 +19,20 @@ BiocManager::install(c("dada2", "phyloseq","Biostrings","PCAtools"))
 install.packages("devtools")               # Developer tools
 devtools::install_github("tobiasgf/lulu")  # Install LULU from github
 ```
+When installing Lulu you might run into this error: 
+
+```
+"Error: Failed to install 'unknown package' from GitHub:
+Line starting 'E ...' is malformed!"
+```
+
+If you get this error one solution might be to change the locale (run these in R):
+````
+Sys.setlocale("LC_ALL","en_US.UTF-8")
+```
+or
+```
+Sys.setlocale("LC_ALL","English")
+```
+
 More packages, including those that have been mentioned, but not necessarily used in the hands-on sessions can be found in the script [R packages](Install_packages.R).
