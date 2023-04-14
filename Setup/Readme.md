@@ -26,7 +26,7 @@ When installing Lulu you might run into this error:
 ! Line starting 'E ...' is malformed!"
 ```
 
-If you get this error one solution might be to change the locale (run these in R):
+If you get this error one possible solution is to change the locale (run these in R):
 ```
 Sys.setlocale("LC_ALL","en_US.UTF-8")
 ```
