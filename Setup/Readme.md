@@ -21,9 +21,9 @@ devtools::install_github("tobiasgf/lulu")  # Install LULU from github
 ```
 When installing Lulu you might run into this error: 
 
-```
-"Error: Failed to install 'unknown package' from GitHub:
-Line starting 'E ...' is malformed!"
+```diff
+! "Error: Failed to install 'unknown package' from GitHub:
+! Line starting 'E ...' is malformed!"
 ```
 
 If you get this error one solution might be to change the locale (run these in R):
