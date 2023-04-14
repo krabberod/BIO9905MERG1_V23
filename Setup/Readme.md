@@ -1,4 +1,4 @@
-### Under construction
+# Installation of R and R packages
 
 We will use R (version 4.0.5 or later) and Rstudio (version 1.4.1 or later) in this course. 
 
