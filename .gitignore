@@ -1,3 +1,4 @@
+.DS_Store
 Dada2_Pipeline/fastq_filtered/
 Dada2_Pipeline/qual_pdf/
 Dada2_Pipeline/blast/
@@ -6,11 +7,9 @@ Dada2_Pipeline/fastq_filtered/qual_pdf/
 Dada2_Pipeline/*pptx
 Dada2_Pipeline/.DS_Store
 *.fastq
-
 *.Rproj
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-.DS_Store
 .DS_Store?
