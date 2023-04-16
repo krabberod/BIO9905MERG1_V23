@@ -218,16 +218,19 @@ PR2_tax_levels <- c("Kingdom", "Supergroup", "Division", "Class",
                     "Order", "Family",
                     "Genus", "Species")
 
-pr2_file <- paste0("databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
-
-# OBS! The next step takes a long time. Hours, depending on the computer.
-# So it will be skipped case we are running late skip this next command. If we have time
-# start the process (i.e. remove hashtags), and have some coffee/lunch.
+# OBS! The next step takes a long time. It might ake hours, depending on the computer.
+# So we will not execute it here! 
+# url <- "https://github.com/pr2database/pr2database/releases/download/v4.14.0/pr2_version_4.14.0_SSU_dada2.fasta.gz"
+# download.file(url, "databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
+# pr2_file <- paste0("databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
 
 # Runtime win i7: 10 hours! 
 # taxa <- assignTaxonomy(seqtab.nochim, refFasta = pr2_file, taxLevels = PR2_tax_levels,
 #                       minBoot = 0, outputBootstraps = TRUE, verbose = TRUE, multithread = TRUE)
 
+# Instead I have prepared the object on github. 
+# it can be downloaded from github directly: 
+taxa <- readRDS(gzcon(url("https://github.com/krabberod/BIO9905MERG1_V23/raw/main/Dada2_Pipeline/taxa.rds")))
 
 
 # In R it is possible sot save objects, or the full workspace.
