@@ -1,6 +1,7 @@
 Dada2_Pipeline/fastq_filtered/
 Dada2_Pipeline/fastq_filtered/qual_pdf/
 Dada2_Pipeline/*pptx
+Dada2_Pipeline/.DS_Store
 *.fastq
 
 *.Rproj
