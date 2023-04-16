@@ -6,13 +6,6 @@ library("Biostrings")
 library("kableExtra")
 library("readxl")
 
-# library("ggplot2")
-# library("dplyr")
-# library("tidyr")
-# library("tibble")
-# library("readr")
-# library("stringr")
-
 
 #### Prepare Directories ####
 # The fastq files are in this zip-file:
@@ -27,6 +20,7 @@ getwd()
 
 
 # Define the name of directories to use.
+# These will be created in your current working directory
 fastq_dir <- "fastq"  # fastq directory with the samples that will be used
 database_dir <- "databases/"  # folder with the PR2 database https://github.com/vaulot/metabarcodes_tutorials/tree/master/databases
 filtered_dir <- "fastq_filtered/"  # for the fastq-files after filtering
