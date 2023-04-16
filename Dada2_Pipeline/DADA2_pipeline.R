@@ -16,7 +16,7 @@ library("readxl")
 
 #### Prepare Directories ####
 # The fastq files are in this zip-file:
-# https://www.dropbox.com/s/msgl7twjfxrcg2r/fastq.zip?dl=0
+# https://www.dropbox.com/s/szz60vroo79imyd/fastq_files.zip?dl=0
 # Download and unzip in your dada2 working directory.
 # The samples should be in a subfolder simply called "fastq"
 # Check your current working directory:
@@ -37,18 +37,8 @@ blast_dir <- "blast/"  # blast2 results
 # Create the directories
 dir.create(filtered_dir)
 dir.create(qual_dir)
-dir.create((dada2_dir))
+dir.create(dada2_dir)
 dir.create(blast_dir)
-
-#### Primers
-# The primers in this example are for commonly used for 18S
-
-primer_set_fwd = c("CCAGCAGCCGCGGTAATTCC", "CCAGCACCCGCGGTAATTCC", "CCAGCAGCTGCGGTAATTCC",
-                   "CCAGCACCTGCGGTAATTCC")
-primer_set_rev = c("ACTTTCGTTCTTGATYRATGA")
-primer_length_fwd <- str_length(primer_set_fwd[1])
-primer_length_rev <- str_length(primer_set_rev[1])
-
 
 #### Examine fastq files
 # get a list of all fastq files in the fastq" directory and separate R1 and R2
@@ -63,7 +53,7 @@ sample.names <- sample.names[, 2]
 
 #### Prepare data: Make a dataframe with the number of sequences in each file ####
 # NB! Any sequence of length 0 will cause the loop to crash
-# These should be removed in advance
+# These should be removed in advance. Cutadapt should not leave any empty sequences.
 
 df <- data.frame()
 
@@ -117,11 +107,6 @@ filt_R1 <- str_c(filtered_dir, sample.names, "_R1_filt.fastq")
 filt_R2 <- str_c(filtered_dir, sample.names, "_R2_filt.fastq")
 
 
-####FILTER WITH CUTADAPT (not executed inside R)
-# Cutadapt (or trimgalore) is the preferred way of filtering sequences, because it will trim
-# primers allowing some mismatches and ambiguities. It is not implemented
-# in R at the moment. But you should have learned how to do prior to using this pipeline.
-
 
 #### DADA2 ####
 #### STEP 1. SIMPLE FILTER BY LENGTH OF PRIMER
@@ -141,11 +126,9 @@ out <- filterAndTrim(fns_R1, filt_R1, fns_R2, filt_R2, truncLen = c(250, 200),
 #### STEP 2. Learn Errors
 # The error profile takes about 2 min on an MacBook Pro M2 16Gb Ram
 # It took 9 min on an windows 11 i7-9700 CPU @ 3.00GHz, 16Gb Ram
-current_time <- Sys.time() # get the current time
+
 err_R1 <- learnErrors(filt_R1, multithread = TRUE)
 plotErrors(err_R1, nominalQ = TRUE)
-current_time2 <- Sys.time()
-current_time2 - current_time
 
 err_R2 <- learnErrors(filt_R2, multithread = T)
 plotErrors(err_R2, nominalQ = TRUE)
@@ -169,10 +152,7 @@ names(derep_R2) <- sample.names
 # It took 2.5 min for each dada on an windows 11 i7-9700 CPU @ 3.00GHz, 16Gb Ram
 
 dada_R1 <- dada(derep_R1, err = err_R1, multithread = TRUE, pool = FALSE)
-current_time <- Sys.time() # get the current time
 dada_R2 <- dada(derep_R2, err = err_R2, multithread = TRUE, pool = FALSE)
-current_time2 <- Sys.time()
-current_time2 - current_time
 
 # Viewing the first entry in each of the dada objects
 dada_R1[[1]]
@@ -194,11 +174,8 @@ plot(table(nchar(getSequences(seqtab)))) #simple plot of length distribution
 #### STEP 7. Remove chimeras ####
 # Takes 12s on M2
 # Takes 1 Min on i7
-current_time <- Sys.time()
 seqtab.nochim <- removeBimeraDenovo(seqtab, method = "consensus", multithread = FALSE,
                                     verbose = TRUE)
-current_time2 <- Sys.time()
-current_time2 - current_time
 
 # Get some stats:
 # Compute % of non chimeras
@@ -247,21 +224,15 @@ PR2_tax_levels <- c("Kingdom", "Supergroup", "Division", "Class",
 
 pr2_file <- paste0("databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
 
-# OBS! The next step takes a long time. ~45-60 min on a medium fast computer...
-# So in case we are running late skip this next command. If we have time
+# OBS! The next step takes a long time. Hours, depending on the computer.
+# So it will be skipped case we are running late skip this next command. If we have time
 # start the process (i.e. remove hashtags), and have some coffee/lunch.
 
-# Runtime result for a mid 2015 MacBook Pro
 # Runtime win i7: 10 hours! 
 
-current_time <- Sys.time()
- taxa <- assignTaxonomy(seqtab.nochim, refFasta = pr2_file, taxLevels = PR2_tax_levels,
-                       minBoot = 0, outputBootstraps = TRUE, verbose = TRUE, multithread = TRUE)
-current_time2 <- Sys.time()
-current_time2 - current_time
 
-save.image("dada2.RData")
-load("dada2.RData")
+# taxa <- assignTaxonomy(seqtab.nochim, refFasta = pr2_file, taxLevels = PR2_tax_levels,
+#                       minBoot = 0, outputBootstraps = TRUE, verbose = TRUE, multithread = TRUE)
 
 
 
@@ -334,14 +305,14 @@ Biostrings::writeXStringSet(seq_out, str_c(blast_dir, "OTU.fasta"), compress = F
 #module purge
 #module load BLAST+/2.8.1-intel-2018b
 #
-#FASTA=OTU.fasta
-#BLAST_TSV=OTU.blast.tsv
-#DB=/cluster/shared/databases/blast/latest/nt
+# FASTA=OTU.fasta
+# BLAST_TSV=OTU.blast.tsv
+# DB=/cluster/shared/databases/blast/latest/nt
 #
 #
-#OUT_FMT="6 qseqid sseqid sacc stitle sscinames staxids sskingdoms sblastnames pident slen length mismatch gapopen qstart qend sstart send evalue bitscore"
+# OUT_FMT="6 qseqid sseqid sacc stitle sscinames staxids sskingdoms sblastnames pident slen length mismatch gapopen qstart qend sstart send evalue bitscore"
 #
-#blastn -max_target_seqs 100 -evalue 1.00e-10 -query $FASTA -out $BLAST_TSV -db "$DB" -outfmt "$OUT_FMT" -num_threads 16
+# blastn -max_target_seqs 100 -evalue 1.00e-10 -query $FASTA -out $BLAST_TSV -db "$DB" -outfmt "$OUT_FMT" -num_threads 16
 ###############
 
 #### Make Phyloseq Object ####
