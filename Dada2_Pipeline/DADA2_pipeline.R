@@ -172,6 +172,8 @@ plot(table(nchar(getSequences(seqtab)))) #simple plot of length distribution
 
 
 #### STEP 7. Remove chimeras ####
+# Chimeric sequences are identified if they can be exactly reconstructed by 
+# a left-segment and a right-segment from two more abundant “parent” sequences
 # Takes 12s on M2
 # Takes 1 Min on i7
 seqtab.nochim <- removeBimeraDenovo(seqtab, method = "consensus", multithread = FALSE,
@@ -229,8 +231,6 @@ pr2_file <- paste0("databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
 # start the process (i.e. remove hashtags), and have some coffee/lunch.
 
 # Runtime win i7: 10 hours! 
-
-
 # taxa <- assignTaxonomy(seqtab.nochim, refFasta = pr2_file, taxLevels = PR2_tax_levels,
 #                       minBoot = 0, outputBootstraps = TRUE, verbose = TRUE, multithread = TRUE)
 
