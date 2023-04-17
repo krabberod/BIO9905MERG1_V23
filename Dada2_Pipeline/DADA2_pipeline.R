@@ -255,15 +255,19 @@ unique(seqtab.nochim_trans$Supergroup)
 # Define a minimum bootstrap value for filtering
 # Think before applying the cut-off! What is the benefits of removing
 # OTUs with low support? What are the drawbacks?
-bootstrap_min <- 80
+
 
 # Remove OTU with annotation below the bootstrap value
 seqtab.nochim_18S <- seqtab.nochim_trans %>% dplyr::filter(Supergroup_boot >= bootstrap_min)
 seqtab.nochim_18S <- seqtab.nochim_trans[which(seqtab.nochim_trans$Supergroup_boot>80),]
 
 unique(seqtab.nochim_18S$Division)
+unique(seqtab.nochim_18S$Kingdom)
 
+# Example for removing Metazoans: 
 seqtab.nochim_18S_noMetazoa <- seqtab.nochim_18S[which(seqtab.nochim_18S$Division!="Metazoa"),]
+
+bootstrap_min <- 80
 seqtab.nochim_18S_lowsupport<- seqtab.nochim_trans %>% dplyr::filter(Supergroup_boot <= bootstrap_min)
 
 
@@ -271,7 +275,7 @@ write_tsv(seqtab.nochim_18S, str_c(dada2_dir, "OTU_table.tsv"))
 write_tsv(seqtab.nochim_18S_noMetazoa, str_c(dada2_dir, "OTU_table_noMetazoa.tsv"))
 write_tsv(seqtab.nochim_18S_lowsupport, str_c(dada2_dir, "OTU_table_lowsupport.tsv"))
 
-####  Write FASTA file for BLAST analysis with taxonomy ####
+####  Write FASTA file for BLAST or similar analysis ####
 # Blasting is an alternative to RDP classifier:
 
 df <- seqtab.nochim_trans
@@ -331,3 +335,63 @@ saveRDS(ps_dada2, str_c(dada2_dir, "phyloseq.rds"))
 # Which can be loaded with:
 # Can be loaded with
 # load("dada2.RData"")
+
+
+
+### HERE ENDS THE DADA 2 Pipeline ####
+### THE FOLLOWING ARE SOME EXAMPLES###
+# In the following you will get some examples from the library phyloseq
+# See the content of the object: 
+ps_dada2
+rank_names(ps_dada2)
+otu_table(ps_dada2)
+
+### Bar graphs ####
+# Phyloseq contains wrappers for plotting functions
+plot_bar(ps_dada2)
+plot_bar(ps_dada2, fill = "Supergroup")
+plot_bar(ps_dada2, fill = "Division")
+
+# Make it a bit better with
+plot_bar(ps_dada2, fill = "Division")+
+  geom_bar(aes(color=Division, fill=Division), stat="identity", position="stack")
+
+
+### Subsetting taxa ####
+SAR <- subset_taxa(ps_dada2,  Supergroup %in% c("Alveolata","Stramenopiles","Rhizaria"))
+aggregate_
+plot_bar(SAR, fill = "Division") +
+  geom_bar(aes(color=Division, fill=Division), stat="identity", position="stack")
+
+
+### Plot only teh Rhizarian orders 
+Rhizaria <- subset_taxa(ps_dada2, Supergroup %in% c("Rhizaria"))
+plot_bar(Rhizaria, x="Order", fill = "Order") +
+  geom_bar(aes(color=Order, fill=Order), stat="identity", position="stack") +
+  theme(legend.position="none")
+
+### Normalization using median sequencing depth ####
+total <- median(sample_sums(ps_dada2))
+standf <- function(x, t=total) round(t * (x / sum(x)))
+ps_dada2_trans <- transform_sample_counts(ps_dada2, standf)
+
+plot_bar(ps_dada2_trans, fill = "Division")+
+  geom_bar(aes(color=Division, fill=Division), stat="identity", position="stack")
+
+# For example one can only take OTUs that represent at least 5% of reads in at least one sample.
+# Remember we normalized all the sampples to median number of reads (total).
+ps_dada2_trans_abund <- filter_taxa(ps_dada2_trans, function(x) sum(x > total*0.05) > 0, TRUE)
+plot_heatmap(ps_dada2_trans_abund, method = "MDS", distance = "bray", #
+             taxa.label = "Genus", taxa.order = "Genus",
+             trans=NULL, low="beige", high="red", na.value="beige")
+
+# ordination of samples:
+ps_dada2_trans.ord <- ordinate(ps_dada2_trans, "NMDS", "bray")
+plot_ordination(ps_dada2_trans, ps_dada2_trans.ord, type="samples")
+plot_ordination(ps_dada2_trans, ps_dada2_trans.ord, type="taxa", color="Supergroup",
+                title="OTUs")
+
+#### Microbiome ####
+# Another package with many interesting functions is Microbiome. It is an extension to phyloseq
+# https://microbiome.github.io/tutorials/
+
