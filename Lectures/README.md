@@ -10,6 +10,7 @@ Here you will find pdfs for the lectures
   - [Introduction to Google Colab - Slides](../Lectures/Intro.to.colab/Intro.to.google.colab.pdf) 
 - [Introduction to R - Slides](../Lectures/intro.to.R/intro.to.R.pdf) - R. Logares
   - [Introduction to R - Examples](../Lectures/intro.to.R/Intro.to.R.BIO9905MERG1_V23.R)
+- [Sequence cleaning](../Lectures/cutadapt.and.seq.cleaning/)
 ### Tuesday
 ### Wednesday
 ### Thursday
