@@ -13,3 +13,5 @@ Dada2_Pipeline/.DS_Store
 .RData
 .Ruserdata
 .DS_Store?
+seqtab.nochim_trans.rds
+updated.taxa.rds

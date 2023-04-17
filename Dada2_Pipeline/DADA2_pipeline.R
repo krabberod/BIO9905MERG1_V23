@@ -103,23 +103,20 @@ filt_R2 <- str_c(filtered_dir, sample.names, "_R2_filt.fastq")
 
 
 #### DADA2 ####
-#### STEP 1. SIMPLE FILTER BY LENGTH OF PRIMER
-# This is is a workaround if you can't filter by any other means. However, it is highly
-# advisable to remove the primers with for instance cutadatp.
-
 # If your setup allows running multiple threads set multithread = TRUE
 # Mac OS: multithread = TRUE
-# Windows: multithread = FALSE,
+# Windows: multithread = FALSE, or is ignored by the function
 # Can take a couple of minutes:
 
 out <- filterAndTrim(fns_R1, filt_R1, fns_R2, filt_R2, truncLen = c(250, 200),
-                     trimLeft = c(primer_length_fwd, primer_length_rev), maxN = 0,
-                     maxEE = c(2, 2), truncQ = 2, rm.phix = TRUE,
+                     # trimLeft = c(primer_length_fwd, primer_length_rev), # IF primers are left in the reads
+                     maxN = 0, maxEE = c(2, 2), truncQ = 2, rm.phix = TRUE,
                      compress = FALSE, multithread = TRUE)
 
 #### STEP 2. Learn Errors
 # The error profile takes about 2 min on an MacBook Pro M2 16Gb Ram
 # It took 9 min on an windows 11 i7-9700 CPU @ 3.00GHz, 16Gb Ram
+# Too 8.5 min for a MacBook Pro Early 2015
 
 err_R1 <- learnErrors(filt_R1, multithread = TRUE)
 plotErrors(err_R1, nominalQ = TRUE)
@@ -129,7 +126,6 @@ plotErrors(err_R2, nominalQ = TRUE)
 
 
 #### STEP 3. Dereplicate the reads ####
-
 derep_R1 <- derepFastq(filt_R1, verbose = FALSE)
 derep_R2 <- derepFastq(filt_R2, verbose = FALSE)
 
@@ -142,7 +138,7 @@ names(derep_R2) <- sample.names
 #### STEP 4. DADA2 main inference
 ####  Sequence-variant inference algorithm on the dereplicated data ####
 # If your computer can run multiple threads set multithread = TRUE
-# Takes 16s on MacBook Pro 2023 M2
+# It took 16s on MacBook Pro 2023 M2
 # It took 2.5 min for each dada on an windows 11 i7-9700 CPU @ 3.00GHz, 16Gb Ram
 
 dada_R1 <- dada(derep_R1, err = err_R1, multithread = TRUE, pool = FALSE)
@@ -193,7 +189,6 @@ rownames(track) <- sample.names
 track
 
 #### Transforming and saving the OTU sequences
-
 seqtab.nochim_trans <- as.data.frame(t(seqtab.nochim)) %>% rownames_to_column(var = "sequence") %>%
   rowid_to_column(var = "OTUNumber") %>% mutate(OTUNumber = sprintf("OTU_%05d",
                                                                     OTUNumber)) %>% mutate(sequence = str_replace_all(sequence, "(-|\\.)", ""))
@@ -234,10 +229,9 @@ taxa <- readRDS(gzcon(url("https://github.com/krabberod/BIO9905MERG1_V23/raw/mai
 
 
 # In R it is possible sot save objects, or the full workspace.
-# Single objects can be saved to a file with the saveRDS() function.
-# saveRDS(taxa, str_c(dada2_dir, "dada2.taxa.rds"))
-# I have prepared a taxonomy file that I can put on github, if necessary.
-# taxa <- readRDS(str_c(dada2_dir, "taxa.rds"))
+# Single objects can be saved to a file with the saveRDS() function
+# Example:
+# saveRDS(taxa, str_c(dada2_dir, "taxa.rds"))
 # Seqtab.nochim_trans <- read.RDS(str_c("seqtab.nochim_trans.rds"))
 
 # Export information in tab or comma separated files
@@ -245,12 +239,16 @@ taxa <- readRDS(gzcon(url("https://github.com/krabberod/BIO9905MERG1_V23/raw/mai
 write_tsv(as_tibble(taxa$tax), file = str_c(dada2_dir, "taxa.txt"))
 
 # Csv:
-#write.csv(taxa$tax, file = str_c(dada2_dir, "taxa.txt"))
+# write.csv(taxa$tax, file = str_c(dada2_dir, "taxa.txt"))
 
 #### Appending taxonomy and boot to the sequence table ####
 taxa_tax <- as.data.frame(taxa$tax)
-taxa_boot <- as.data.frame(taxa$boot) %>% rename_all(funs(str_c(., "_boot")))
-seqtab.nochim_trans <- taxa_tax %>% bind_cols(taxa_boot) %>% bind_cols(seqtab.nochim_trans)
+taxa_boot <- as.data.frame(taxa$boot) 
+colnames(taxa_boot) <- paste0(colnames(taxa_boot),"_boot")
+
+# inner_join(seqtab.nochim_trans, rownames_to_column(taxa_tax), by=c("sequence" = "rowname"))
+# seqtab.nochim_trans <- taxa_tax %>% bind_cols(taxa_boot) %>% bind_cols(seqtab.nochim_trans)
+
 
 #Check at the Kingdom-level for
 unique(seqtab.nochim_trans$Kingdom)

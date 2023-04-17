@@ -33,10 +33,10 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 10:00        | *Introduction continued*                                                       |                               |
 |               | 11:00        | Introduction to sequencing techniques                                          | Robert Lyle                   |
 |               | 12:00        | **Lunch break**                                                                |                               |
-|               | 13:00        |                                                                                | Håvard Kauserud               |
+|               | 13:00        | Group work                                                                     | Håvard Kauserud               |
 |               | 14:00        | [Introduction to Linux, Google Colab and R ](./Lectures)                       | Ramiro Logares                |
 |               | 15:00        | [Cutadapt and sequence cleaning](Lectures/cutadapt.and.seq.cleaning/)          |                               |
-|               | 16:00        | [Help with setup and installation of required packages](./Setup)                 | Anders K. Krabberød           |
+|               | 16:00        | [Help with setup and installation of required packages](./Setup)               | Anders K. Krabberød           |
 |               | 17:00        | **PIZZA**                                                                      |                               |
 |               |              |                                                                                |                               |
 | **Tuesday**   | 09:00        | [Introduction to DADA2](Dada2_Pipeline)                                        | A. Krabberød / R. Logares     |
