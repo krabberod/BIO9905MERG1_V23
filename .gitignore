@@ -15,3 +15,5 @@ Dada2_Pipeline/.DS_Store
 .DS_Store?
 seqtab.nochim_trans.rds
 updated.taxa.rds
+taxa.txt
+OTU_no_taxonomy.fasta

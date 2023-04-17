@@ -114,9 +114,9 @@ out <- filterAndTrim(fns_R1, filt_R1, fns_R2, filt_R2, truncLen = c(250, 200),
                      compress = FALSE, multithread = TRUE)
 
 #### STEP 2. Learn Errors
+# It took 9 min on an windows 11 i7-9700 CPU @ 3.00GHz, 16Gb Ram (pr. err_profile)
+# Too 8.5 min for a MacBook Pro Early 2015 (pr. err_profile)
 # The error profile takes about 2 min on an MacBook Pro M2 16Gb Ram
-# It took 9 min on an windows 11 i7-9700 CPU @ 3.00GHz, 16Gb Ram
-# Too 8.5 min for a MacBook Pro Early 2015
 
 err_R1 <- learnErrors(filt_R1, multithread = TRUE)
 plotErrors(err_R1, nominalQ = TRUE)
@@ -208,24 +208,21 @@ Biostrings::writeXStringSet(seq_out, str_c(dada2_dir, "OTU_no_taxonomy.fasta"),
 #
 # This step depends on the kind of taxonomic assignment that will be used later
 # The PR2 database is a curated quality database for protists, with 8 taxonomic ranks
-
+# url <- "https://github.com/pr2database/pr2database/releases/download/v4.14.0/pr2_version_4.14.0_SSU_dada2.fasta.gz"
+# download.file(url, "databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
+pr2_file <- paste0("databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
 PR2_tax_levels <- c("Kingdom", "Supergroup", "Division", "Class",
                     "Order", "Family",
                     "Genus", "Species")
 
-# OBS! The next step takes a long time. It might ake hours, depending on the computer.
+# OBS! The next step takes a long time. It might take hours, depending on the computer.
 # So we will not execute it here! 
-# url <- "https://github.com/pr2database/pr2database/releases/download/v4.14.0/pr2_version_4.14.0_SSU_dada2.fasta.gz"
-# download.file(url, "databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
-# pr2_file <- paste0("databases/pr2_version_4.14.0_SSU_dada2.fasta.gz")
-
-# Runtime win i7: 10 hours! 
 # taxa <- assignTaxonomy(seqtab.nochim, refFasta = pr2_file, taxLevels = PR2_tax_levels,
-#                       minBoot = 0, outputBootstraps = TRUE, verbose = TRUE, multithread = TRUE)
+                       minBoot = 0, outputBootstraps = TRUE, verbose = TRUE, multithread = TRUE)
 
 # Instead I have prepared the object on github. 
 # it can be downloaded from github directly: 
-taxa <- readRDS(gzcon(url("https://github.com/krabberod/BIO9905MERG1_V23/raw/main/Dada2_Pipeline/taxa.rds")))
+# taxa <- readRDS(gzcon(url("https://github.com/krabberod/BIO9905MERG1_V23/raw/main/Dada2_Pipeline/taxa.rds")))
 
 
 # In R it is possible sot save objects, or the full workspace.
@@ -247,14 +244,12 @@ taxa_boot <- as.data.frame(taxa$boot)
 colnames(taxa_boot) <- paste0(colnames(taxa_boot),"_boot")
 
 # inner_join(seqtab.nochim_trans, rownames_to_column(taxa_tax), by=c("sequence" = "rowname"))
-# seqtab.nochim_trans <- taxa_tax %>% bind_cols(taxa_boot) %>% bind_cols(seqtab.nochim_trans)
+seqtab.nochim_trans <- taxa_tax %>% bind_cols(taxa_boot) %>% bind_cols(seqtab.nochim_trans)
 
 
 #Check at the Kingdom-level for
 unique(seqtab.nochim_trans$Kingdom)
 unique(seqtab.nochim_trans$Supergroup)
-
-
 
 #### Filter for 18S ####
 # Define a minimum bootstrap value for filtering
