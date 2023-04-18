@@ -14,7 +14,7 @@ Here you will find pdfs for the lectures
 ### Tuesday
 - [DADA2 lecture](../Lectures/Lecture_pdfs/DADA2_lecture_V23.pdf) - A.K. Krabberød
   - [DADA2 pipline](../Dada2_Pipeline/)
-- 
+- [Community Ecology](./community.ecology.intro/Community.Ecology.short.pdf)
 ### Wednesday
 ### Thursday
 ### Friday
