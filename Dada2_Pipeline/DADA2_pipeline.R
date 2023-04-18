@@ -34,7 +34,7 @@ dir.create(qual_dir)
 dir.create(dada2_dir)
 dir.create(blast_dir)
 
-#### Examine fastq files
+#### Examine fastq files ####
 # get a list of all fastq files in the fastq" directory and separate R1 and R2
 fns <- sort(list.files(fastq_dir, full.names = T))
 fns <- fns[str_detect(basename(fns), ".fastq.gz")]
@@ -67,7 +67,7 @@ for (i in 1:length(fns_R1)) {
 View(df)
 
 # If you want to write the table to your working directory remove the hashtag and use:
-# write.table(df, file = 'n_seq.txt', sep='\t', row.names = FALSE, na='',quote=FALSE)
+ write.table(df, file = 'n_seq.txt', sep='\t', row.names = FALSE, na='',quote=FALSE)
 
 # plot the histogram with number of sequences
 # The plot for the example data looks kind of uninformative, why?
@@ -111,7 +111,7 @@ filt_R2 <- str_c(filtered_dir, sample.names, "_R2_filt.fastq")
 out <- filterAndTrim(fns_R1, filt_R1, fns_R2, filt_R2, truncLen = c(250, 200),
                      # trimLeft = c(primer_length_fwd, primer_length_rev), # IF primers are left in the reads
                      maxN = 0, maxEE = c(2, 2), truncQ = 2, rm.phix = TRUE,
-                     compress = FALSE, multithread = TRUE)
+                     compress = FALSE, multithread = FALSE)
 
 #### STEP 2. Learn Errors
 # It took 9 min on an windows 11 i7-9700 CPU @ 3.00GHz, 16Gb Ram (pr. err_profile)
@@ -126,7 +126,7 @@ plotErrors(err_R2, nominalQ = TRUE)
 
 
 #### STEP 3. Dereplicate the reads ####
-derep_R1 <- derepFastq(filt_R1, verbose = FALSE)
+derep_R1 <- derepFastq(filt_R1, verbose = TRUE)
 derep_R2 <- derepFastq(filt_R2, verbose = FALSE)
 
 
@@ -218,7 +218,7 @@ PR2_tax_levels <- c("Kingdom", "Supergroup", "Division", "Class",
 # OBS! The next step takes a long time. It might take hours, depending on the computer.
 # So we will not execute it here! 
 # taxa <- assignTaxonomy(seqtab.nochim, refFasta = pr2_file, taxLevels = PR2_tax_levels,
-                       minBoot = 0, outputBootstraps = TRUE, verbose = TRUE, multithread = TRUE)
+#                      minBoot = 0, outputBootstraps = TRUE, verbose = TRUE, multithread = TRUE)
 
 # Instead I have prepared the object on github. 
 # it can be downloaded from github directly: 
@@ -239,35 +239,33 @@ write_tsv(as_tibble(taxa$tax), file = str_c(dada2_dir, "taxa.txt"))
 # write.csv(taxa$tax, file = str_c(dada2_dir, "taxa.txt"))
 
 #### Appending taxonomy and boot to the sequence table ####
-taxa_tax <- as.data.frame(taxa$tax)
-taxa_boot <- as.data.frame(taxa$boot) 
-colnames(taxa_boot) <- paste0(colnames(taxa_boot),"_boot")
-
-# inner_join(seqtab.nochim_trans, rownames_to_column(taxa_tax), by=c("sequence" = "rowname"))
-seqtab.nochim_trans <- taxa_tax %>% bind_cols(taxa_boot) %>% bind_cols(seqtab.nochim_trans)
+# taxa_tax <- as.data.frame(taxa$tax)
+# taxa_boot <- as.data.frame(taxa$boot) 
+# colnames(taxa_boot) <- paste0(colnames(taxa_boot),"_boot")
+# inner_join(seqtab.nochim_trans, rownames_to_column(taxa_tax), by=c("sequence" = "rowname"))#
+# seqtab.nochim_trans <- taxa_tax %>% bind_cols(taxa_boot) %>% bind_cols(seqtab.nochim_trans)
 
 
 #Check at the Kingdom-level for
 unique(seqtab.nochim_trans$Kingdom)
 unique(seqtab.nochim_trans$Supergroup)
+unique(seqtab.nochim_trans$Family_boot)
 
 #### Filter for 18S ####
 # Define a minimum bootstrap value for filtering
 # Think before applying the cut-off! What is the benefits of removing
 # OTUs with low support? What are the drawbacks?
 
-
+bootstrap_min <- 80
 # Remove OTU with annotation below the bootstrap value
 seqtab.nochim_18S <- seqtab.nochim_trans %>% dplyr::filter(Supergroup_boot >= bootstrap_min)
 seqtab.nochim_18S <- seqtab.nochim_trans[which(seqtab.nochim_trans$Supergroup_boot>80),]
 
 unique(seqtab.nochim_18S$Division)
-unique(seqtab.nochim_18S$Kingdom)
+sort(unique(seqtab.nochim_18S$Family))
 
 # Example for removing Metazoans: 
 seqtab.nochim_18S_noMetazoa <- seqtab.nochim_18S[which(seqtab.nochim_18S$Division!="Metazoa"),]
-
-bootstrap_min <- 80
 seqtab.nochim_18S_lowsupport<- seqtab.nochim_trans %>% dplyr::filter(Supergroup_boot <= bootstrap_min)
 
 
@@ -337,7 +335,6 @@ saveRDS(ps_dada2, str_c(dada2_dir, "phyloseq.rds"))
 # load("dada2.RData"")
 
 
-
 ### HERE ENDS THE DADA 2 Pipeline ####
 ### THE FOLLOWING ARE SOME EXAMPLES###
 # In the following you will get some examples from the library phyloseq
@@ -359,7 +356,6 @@ plot_bar(ps_dada2, fill = "Division")+
 
 ### Subsetting taxa ####
 SAR <- subset_taxa(ps_dada2,  Supergroup %in% c("Alveolata","Stramenopiles","Rhizaria"))
-aggregate_
 plot_bar(SAR, fill = "Division") +
   geom_bar(aes(color=Division, fill=Division), stat="identity", position="stack")
 
