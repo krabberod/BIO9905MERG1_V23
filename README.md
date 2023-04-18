@@ -45,8 +45,8 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 12:00        | **Lunch break**                                                                |                               |
 |               | 13:00        | *DADA2 continued*                                                              |                               |
 |               | 14:00        | *DADA2 continued*                                                              |                               |
-|               | 15:00        | About DADA2 and its further applications                                       | Ben Callahan (Zoom)           |
-|               | 16:00        | *About DADA2 continued*                                                        |                               |
+|               | 15:00        | Downstream analyses                                                            | R. Logares                    |
+|               | 16:00        | *Downstream analyses*                                                          |                               |
 |               |              |                                                                                |                               |
 | **Wednesday** | 09:00        | [Introduction to VSEARCH and Swarm](Vsearch_swarm)                             | Torbjørn Rognes               |
 |               | 10:00        | [from FASTQ files to OTU tables ](Vsearch_swarm)                               | Frédéric Mahé                 |
