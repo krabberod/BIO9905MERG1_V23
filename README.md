@@ -53,7 +53,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 11:00        | *continued*                                                                    |                               |
 |               | 12:00        | **Lunch break**                                                                |                               |
 |               | 13:00        | [LULU and MUMU (C++ version of LULU)](Vsearch_swarm/)                          | Frédéric Mahé                 |
-|               | 14:00        | Abundance estimation in DNA metabarcoding                                      | Douglas Yu (Zoom)             |
+|               | 14:00        | [Abundance estimation in DNA metabarcoding ](./Lectures/Estimating_abundance/) | Douglas Yu (Zoom)             |
 |               | 15:00        | Early end, social activities (TBA)                                             |                               |
 |               | 18:00        | Social activities (TBA)                                                        |                               |
 |               |              |                                                                                |                               |
