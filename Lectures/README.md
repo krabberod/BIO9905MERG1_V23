@@ -13,7 +13,7 @@ Here you will find pdfs for the lectures
 - [Sequence cleaning](../Lectures/cutadapt.and.seq.cleaning/)
 ### Tuesday
 - [DADA2 lecture](../Lectures/Lecture_pdfs/DADA2_lecture_V23.pdf) - A.K. Krabberød
-  - [DADA2 pipline](../Dada2_Pipeline/)
+  - [DADA2 pipeline](../Dada2_Pipeline/)
 - [Community Ecology](./community.ecology.intro/Community.Ecology.short.pdf) - R. Logares
 ### Wednesday
 - [Introduction to VSEARCH and Swarm](../Lectures/Lecture_pdfs/bio9901merg1-2023-vsearch-swarm.pdf) - F. Mahe
