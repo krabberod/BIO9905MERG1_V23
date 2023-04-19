@@ -48,11 +48,11 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 15:00        | [Community Ecology](./Lectures/community.ecology.intro/)                       | R. Logares                    |
 |               | 16:00        | *Community Ecology*                                                            |                               |
 |               |              |                                                                                |                               |
-| **Wednesday** | 09:00        | [Introduction to VSEARCH and Swarm](Vsearch_swarm)                             | Torbjørn Rognes               |
-|               | 10:00        | [from FASTQ files to OTU tables ](Vsearch_swarm)                               | Frédéric Mahé                 |
+| **Wednesday** | 09:00        | [Introduction to VSEARCH and Swarm](./Lectures/Vsearch_swarm/)                             | Torbjørn Rognes               |
+|               | 10:00        | [from FASTQ files to OTU tables ](./Lectures/Vsearch_swarm/)                               | Frédéric Mahé                 |
 |               | 11:00        | *continued*                                                                    |                               |
 |               | 12:00        | **Lunch break**                                                                |                               |
-|               | 13:00        | [LULU and MUMU (C++ version of LULU)](Vsearch_swarm/)                          | Frédéric Mahé                 |
+|               | 13:00        | [LULU and MUMU (C++ version of LULU)](./Lectures/Vsearch_swarm//)                          | Frédéric Mahé                 |
 |               | 14:00        | [Abundance estimation in DNA metabarcoding ](./Lectures/Estimating_abundance/) | Douglas Yu (Zoom)             |
 |               | 15:00        | Early end, social activities (TBA)                                             |                               |
 |               | 18:00        | Social activities (TBA)                                                        |                               |
@@ -64,7 +64,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 13:00        | OTUs, ASVs and phylospecies                                                    | Micah Dunthorn                |
 |               | 14:00        | Contamination, library prep, aerial metabarcoding                              | Kristine Bohmann (Zoom)       |
 |               | 15:00        | *continued*                                                                    |                               |
-|               | 16:00        | [LULU and MUMU (C++ version of LULU)](Vsearch_swarm/)                          | Frédéric Mahé                 |
+|               | 16:00        | [LULU and MUMU (C++ version of LULU)](./Lectures/Vsearch_swarm/)                          | Frédéric Mahé                 |
 |               |              |                                                                                |                               |
 | **Friday**    | 09:00        | Taxonomic annotation                                                           | Marie Davey                   |
 |               | 10:00        | Case study (insect metabarcoding)                                              | Marie Davey                   |
