@@ -68,9 +68,9 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               |              |                                                                                |                               |
 | **Friday**    | 09:00        | Taxonomic annotation                                                           | Marie Davey                   |
 |               | 10:00        | Case study (insect metabarcoding)                                              | Marie Davey                   |
-|               | 11:00        | Metacoder                                                                      | Ella Thoen                    |
+|               | 11:00        | [Metacoder](./Lectures/Metacoder/)                                             | Ella Thoen                    |
 |               | 12:00        | **Lunch break**                                                                |                               |
-|               | 13:00        | Downstream analyses                                                            | Ramiro  and Anders            |
+|               | 13:00        | Downstream analyses, [Networks](./Lectures/Networks/)                          | Ramiro  and Anders            |
 |               | 14:00        | Case studie on DNA metabarcoding                                               | Sundy Maurice (guest lecture) |
 |               | 15:00        | Summing up, Q&A                                                                |                               |
 

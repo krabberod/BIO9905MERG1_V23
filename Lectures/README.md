@@ -20,3 +20,5 @@ Here you will find pdfs for the lectures
 - [Estimating Abundance](./Estimating_abundance/Estimating_abundance_20230416.pdf)
 ### Thursday
 ### Friday
+- [Introduction to Metacoder](./Lecture_pdfs/Introduction_to_Metacoder.pdf) - E. Thoen
+- [Networks](./Lecture_pdfs/Networks_Bio9905_V23.pdf)
