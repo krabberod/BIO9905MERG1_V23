@@ -64,7 +64,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 13:00        | OTUs, ASVs and phylospecies                                                    | Micah Dunthorn                |
 |               | 14:00        | Contamination, library prep, aerial metabarcoding                              | Kristine Bohmann (Zoom)       |
 |               | 15:00        | *continued*                                                                    |                               |
-|               | 16:00        | How to work on own data? Q&A                                                   |                               |
+|               | 16:00        | [LULU and MUMU (C++ version of LULU)](Vsearch_swarm/)                          | Frédéric Mahé                 |
 |               |              |                                                                                |                               |
 | **Friday**    | 09:00        | Taxonomic annotation                                                           | Marie Davey                   |
 |               | 10:00        | Case study (insect metabarcoding)                                              | Marie Davey                   |
