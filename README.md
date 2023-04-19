@@ -46,7 +46,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 13:00        | *DADA2 continued*                                                              |                               |
 |               | 14:00        | *DADA2 continued*                                                              |                               |
 |               | 15:00        | [Community Ecology](./Lectures/community.ecology.intro/)                       | R. Logares                    |
-|               | 16:00        | *Community Ecology*                                                          |                               |
+|               | 16:00        | *Community Ecology*                                                            |                               |
 |               |              |                                                                                |                               |
 | **Wednesday** | 09:00        | [Introduction to VSEARCH and Swarm](Vsearch_swarm)                             | Torbjørn Rognes               |
 |               | 10:00        | [from FASTQ files to OTU tables ](Vsearch_swarm)                               | Frédéric Mahé                 |
@@ -64,6 +64,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 13:00        | OTUs, ASVs and phylospecies                                                    | Micah Dunthorn                |
 |               | 14:00        | Contamination, library prep, aerial metabarcoding                              | Kristine Bohmann (Zoom)       |
 |               | 15:00        | *continued*                                                                    |                               |
+|               | 16:00        | How to work on own data? Q&A                                                   |                               |
 |               |              |                                                                                |                               |
 | **Friday**    | 09:00        | Taxonomic annotation                                                           | Marie Davey                   |
 |               | 10:00        | Case study (insect metabarcoding)                                              | Marie Davey                   |
