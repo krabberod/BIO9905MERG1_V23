@@ -2,7 +2,7 @@ Here you will find pdfs for the lectures
 
 ### Monday
 - [Introduction to DNA metabarcoding.](../Lectures/Lecture_pdfs/Intro_lecture.pdf) - H. Kauserud
-- [Introduction to sequencing techinques](../Lectures/Lecture_pdfs/20230417_Lyle_v2.pdf) - Rober Lyle
+- [Introduction to sequencing techniques](../Lectures/Lecture_pdfs/20230417_Lyle_v2.pdf) - Rober Lyle
 - [Introduction to Linux](../Lectures/Intro.to.unix/intro.to.unix.pdf) - R. Logares
   - [Linux cheat sheet](../Lectures/Intro.to.unix/Unix_cheat_sheet.pdf)
   - [Linux tutorial](../Lectures/Intro.to.unix/unix.commands.and.tutorial.txt)
