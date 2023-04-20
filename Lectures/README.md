@@ -19,6 +19,8 @@ Here you will find pdfs for the lectures
 - [Introduction to VSEARCH and Swarm](../Lectures/Lecture_pdfs/bio9901merg1-2023-vsearch-swarm.pdf) - F. Mahe
 - [Estimating Abundance](./Estimating_abundance/Estimating_abundance_20230416.pdf)
 ### Thursday
+- [Phylogenetic placement](./Lecture_pdfs/Lucas_Czeck_placement_share.pdf) - L. Czeck
+- [Introduction to long-read DNA metabarcoding]() - M. Jamy 
 ### Friday
 - [Introduction to Metacoder](./Lecture_pdfs/Introduction_to_Metacoder.pdf) - E. Thoen
 - [Networks](./Lecture_pdfs/Networks_Bio9905_V23.pdf)
