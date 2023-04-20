@@ -22,5 +22,7 @@ Here you will find pdfs for the lectures
 - [Phylogenetic placement](./Lecture_pdfs/Lucas_Czeck_placement_share.pdf) - L. Czeck
 - [Introduction to long-read DNA metabarcoding]() - M. Jamy 
 ### Friday
+- [Taxonomic Assignment](./Lecture_pdfs/Davey_metabarcoding_course_taxonomic_assignment_20042023.pdf) - M. Davey
+- [Case study (insect metabarcoding)](./Lecture_pdfs/Davey_NorIns_Case_Study_20042023.pdf) - M. Davey
 - [Introduction to Metacoder](./Lecture_pdfs/Introduction_to_Metacoder.pdf) - E. Thoen
 - [Networks](./Lecture_pdfs/Networks_Bio9905_V23.pdf)
