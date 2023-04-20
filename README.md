@@ -57,7 +57,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 15:00        | Early end, social activities (TBA)                                             |                               |
 |               | 18:00        | Social activities (TBA)                                                        |                               |
 |               |              |                                                                                |                               |
-| **Thursday**  | 09:00        | Phylogenetic placement/binning of HTS data                                     | Lucas Czech                   |
+| **Thursday**  | 09:00        | [Phylogenetic placement/binning of HTS data ](./Lectures/Lecture_pdfs/Lucas_Czeck_placement_share.pdf)                                    | Lucas Czech                   |
 |               | 10:00        | Introduction to long-read DNA metabarcoding                                    | Mahawash Jamy                 |
 |               | 11:00        | *continued*                                                                    |                               |
 |               | 12:00        | **Lunch break**                                                                |                               |
