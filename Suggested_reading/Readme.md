@@ -26,3 +26,10 @@ Here we have gathered some literature on metabarcoding.
 - [Röttjers et al. 2018](Rottjers_2018.pdf) - From hairballs to hypotheses–biological insights from microbial networks. FEMS Microbiology Reviews, 42, 761–780
 - [Layeghifard et al.2017](Layeghifard_2017.pdf) - Disentangling Interactions in the Microbiome: A Network Perspective. Trend. Microbiol.
 - [Faust et al. 2012](Faust_nrmicro2832.pdf)  Microbial interactions: from networks to models. Nat. rev. Microb.
+
+### Data Visualisation
+- [R for Data Science, Wickham and Grolemund](https://r4ds.had.co.nz/) - Free ebook
+- [R graphics Cookbook, W. Chang](https://r-graphics.org/) - Free ebook 
+
+### Other links
+- [Youtube: High Resolution Metagenomic Sequencing using DADA2 and LoopSeq](https://youtu.be/eV_UCr-5ARE) B. Callahan
