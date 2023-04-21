@@ -21,6 +21,8 @@ Here you will find pdfs for the lectures
 ### Thursday
 - [Phylogenetic placement](./Lecture_pdfs/Lucas_Czeck_placement_share.pdf) - L. Czeck
 - [Introduction to long-read DNA metabarcoding]() - M. Jamy 
+- [](./Lecture_pdfs/dunthorn_clustering_talk_Oslo_2023.pdf) - M. Dunthorn
+- [Contamination in metabarcoding studies - case: airborne eDNA](./Lecture_pdfs/kbohmann_2023_reduced_file_size.pdf) - K. Bohman
 ### Friday
 - [Taxonomic Assignment](./Lecture_pdfs/Davey_metabarcoding_course_taxonomic_assignment_20042023.pdf) - M. Davey
 - [Case study (insect metabarcoding)](./Lecture_pdfs/Davey_NorIns_Case_Study_20042023.pdf) - M. Davey

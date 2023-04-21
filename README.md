@@ -61,8 +61,8 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 10:00        | Introduction to long-read DNA metabarcoding                                                                  | Mahwash Jamy                  |
 |               | 11:00        | *continued*                                                                                                  |                               |
 |               | 12:00        | **Lunch break**                                                                                              |                               |
-|               | 13:00        | OTUs, ASVs and phylospecies                                                                                  | Micah Dunthorn                |
-|               | 14:00        | Contamination, library prep, aerial metabarcoding                                                            | Kristine Bohmann (Zoom)       |
+|               | 13:00        | [OTUs, ASVs and phylospecies](./Lectures/Lecture_pdfs/dunthorn_clustering_talk_Oslo_2023.pdf)                                                                                  | Micah Dunthorn                |
+|               | 14:00        | [Contamination, library prep, aerial metabarcoding](./Lectures/Lecture_pdfs/kbohmann_2023_reduced_file_size.pdf)                                                            | Kristine Bohmann (Zoom)       |
 |               | 15:00        | *continued*                                                                                                  |                               |
 |               | 16:00        | [LULU and MUMU (C++ version of LULU)](./Lectures/Vsearch_swarm/)                                             | Frédéric Mahé                 |
 |               |              |                                                                                                              |                               |
@@ -100,7 +100,7 @@ You can find the PDFs as well as some more reading material under  [Suggested re
  -Jamy et al. 2019. Long-read metabarcoding of the eukaryotic rDNA operon to phylogenetically and taxonomically resolve environmental diversity. Molecular Ecology Resources, 20, 429-443.
  ----
  # Class of 2023
- ![](./images/Class_of_2023.jpg)
+ ![](./images/Class_of_2023.png)
  ----
 ### Supported by [Digitalt Liv Norge](https://www.digitallifenorway.org/), [ForBio](https://www.forbio.uio.no/), and [Norbis](https://norbis.w.uib.no/)
 ![](images/2023/04/Artboard2x.png)  
