@@ -27,4 +27,4 @@ Here you will find pdfs for the lectures
 - [Taxonomic Assignment](./Lecture_pdfs/Davey_metabarcoding_course_taxonomic_assignment_20042023.pdf) - M. Davey
 - [Case study (insect metabarcoding)](./Lecture_pdfs/Davey_NorIns_Case_Study_20042023.pdf) - M. Davey
 - [Introduction to Metacoder](./Lecture_pdfs/Introduction_to_Metacoder.pdf) - E. Thoen
-- [Networks](./Lecture_pdfs/Networks_Bio9905_V23.pdf)
+- [Networks](./Lecture_pdfs/Krabberod_Networks_Bio9905_V23.pdf)
