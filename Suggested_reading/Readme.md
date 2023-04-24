@@ -32,4 +32,4 @@ Here we have gathered some literature on metabarcoding.
 - [R graphics Cookbook, W. Chang](https://r-graphics.org/) - Free ebook 
 
 ### Other links
-- [Youtube: High Resolution Metagenomic Sequencing using DADA2 and LoopSeq](https://youtu.be/eV_UCr-5ARE) B. Callahan
+- [Youtube: High Resolution Metagenomic Sequencing using DADA2 and LoopSeq](https://youtu.be/eV_UCr-5ARE) - B. Callahan

@@ -20,11 +20,11 @@ Here you will find pdfs for the lectures
 - [Estimating Abundance](./Estimating_abundance/Estimating_abundance_20230416.pdf)
 ### Thursday
 - [Phylogenetic placement](./Lecture_pdfs/Lucas_Czeck_placement_share.pdf) - L. Czeck
-- [Introduction to long-read DNA metabarcoding]() - M. Jamy 
-- [](./Lecture_pdfs/dunthorn_clustering_talk_Oslo_2023.pdf) - M. Dunthorn
+- [Introduction to long-read DNA metabarcoding](./Lecture_pdfs/Jamy_Long-read_metabarcoding.pdf) - M. Jamy 
+- [Equating OTUs with Species Diversity](./Lecture_pdfs/dunthorn_clustering_talk_Oslo_2023.pdf) - M. Dunthorn
 - [Contamination in metabarcoding studies - case: airborne eDNA](./Lecture_pdfs/kbohmann_2023_reduced_file_size.pdf) - K. Bohman
 ### Friday
 - [Taxonomic Assignment](./Lecture_pdfs/Davey_metabarcoding_course_taxonomic_assignment_20042023.pdf) - M. Davey
 - [Case study (insect metabarcoding)](./Lecture_pdfs/Davey_NorIns_Case_Study_20042023.pdf) - M. Davey
 - [Introduction to Metacoder](./Lecture_pdfs/Introduction_to_Metacoder.pdf) - E. Thoen
-- [Networks](./Lecture_pdfs/Krabberod_Networks_Bio9905_V23.pdf)
+- [Networks](./Lecture_pdfs/Krabberod_Networks_Bio9905_V23.pdf) - A. Krabberød
