@@ -100,7 +100,7 @@ You can find the PDFs as well as some more reading material under  [Suggested re
  -Jamy et al. 2019. Long-read metabarcoding of the eukaryotic rDNA operon to phylogenetically and taxonomically resolve environmental diversity. Molecular Ecology Resources, 20, 429-443.
  ----
  # Class of 2023
- ![](./images/Class_of_2023.png)
+ ![](./images/Class_of_2023_v2.png)
  ----
 ### Supported by [Digitalt Liv Norge](https://www.digitallifenorway.org/), [ForBio](https://www.forbio.uio.no/), and [Norbis](https://norbis.w.uib.no/)
 ![](images/2023/04/Artboard2x.png)  
