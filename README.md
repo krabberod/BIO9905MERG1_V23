@@ -71,7 +71,7 @@ The main teachers will be Ramiro Logares, Anders K. Krabberød, Micah Dunthorn, 
 |               | 11:00        | [Metacoder](./Lectures/Metacoder/)                                                                               | Ella Thoen                    |
 |               | 12:00        | **Lunch break**                                                                                                  |                               |
 |               | 13:00        | Downstream analyses: [Networks](./Lectures/Networks/)                                                            | Ramiro  and Anders            |
-|               | 14:00        | Case studie on DNA metabarcoding                                                                                 | Sundy Maurice (guest lecture) |
+|               | 14:00        | [Case studie on DNA metabarcoding ](./Lectures/Lecture_pdfs/Maurice_Metabarcoding_course_2023_Std_v2.pdf)                                                                                | Sundy Maurice (guest lecture) |
 |               | 15:00        | Summing up, QnA                                                                                                  |                               |
 
 

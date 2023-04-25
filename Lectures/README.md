@@ -28,3 +28,4 @@ Here you will find pdfs for the lectures
 - [Case study (insect metabarcoding)](./Lecture_pdfs/Davey_NorIns_Case_Study_20042023.pdf) - M. Davey
 - [Introduction to Metacoder](./Lecture_pdfs/Introduction_to_Metacoder.pdf) - E. Thoen
 - [Networks](./Lecture_pdfs/Krabberod_Networks_Bio9905_V23.pdf) - A. Krabberød
+- [Case study: metabarcoding microbial communities inhabiting dead wood in boreal forests](./Lecture_pdfs/Maurice_Metabarcoding_course_2023_Std_v2.pdf) - S. Maurice
